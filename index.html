@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#1d0328] via-[#882d80] to-[#290120] animate-gradient-move"></div>
+    <div class="absolute inset-0 gradient-overlay"></div>
+    <canvas id="hoa-roi-canvas"></canvas>
+    <div id="hearts-container" class="absolute inset-0 overflow-hidden z-0"></div>
+
+    <div id="app-container" class="relative min-h-screen flex flex-col items-center justify-center text-white text-center p-4 z-10">
+        
+        <div id="name-prompt" class="transition-opacity duration-500">
+            <h2 class="font-dancing text-4xl md:text-6xl text-pink-200 mb-6 drop-shadow-lg">Tên của người đẹp là:</h2>
+            <input id="name-input" type="text" placeholder="Nhập tên ở đây" class="bg-white/20 border-2 border-pink-300 rounded-lg px-4 py-3 text-white text-center text-xl focus:outline-none focus:ring-2 focus:ring-pink-400 mb-8 w-72 transition-all duration-300" autocomplete="off">
+            <button id="submit-name-btn" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-lg">
+                Ấn đê
+            </button>
+        </div>
+
+        <div id="greeting-content" class="hidden transition-opacity duration-500">
+            <h1 id="main-title" class="font-dancing text-5xl md:text-8xl font-bold text-pink-300 drop-shadow-[0_5px_15px_rgba(244,114,182,0.6)] mb-4">
+
+            </h1>
+            <p id="message" class="text-lg md:text-2xl text-pink-100 max-w-2xl mx-auto drop-shadow-[0_2px_5px_rgba(0,0,0,0.5)]">
+            </p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
+
